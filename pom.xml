@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <antlr4.visitor>true</antlr4.visitor>
   </properties>
 
   <dependencies>
@@ -32,13 +33,15 @@
   <build>
   	<plugins>
   		<plugin>
-    <groupId>org.antlr</groupId>
-    <artifactId>antlr4-maven-plugin</artifactId>
-    <version>4.5.3</version>
+		    <groupId>org.antlr</groupId>
+		    <artifactId>antlr4-maven-plugin</artifactId>
+		    <version>4.5.3</version>
     <executions>
         <execution>
             <goals>
                 <goal>antlr4</goal>
+                <!-- antlr4:antlr4 -->
+                 <!-- antlr4:help -->
             </goals>
         </execution>
     </executions>
